@@ -52153,7 +52153,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [(item.new_status == 'N') ? _c('div', [_c('img', {
       attrs: {
-        "src": "/images/new.png",
+        "src": "/static/images/new.png",
         "width": "32px"
       }
     })]) : _vm._e()])], 1)
