@@ -42,7 +42,7 @@
 //   console.log('The database has connected.')
 // })
 // module.exports = Models
-const AV = require('leancloud-storage')
+const AV = require('leanengine')
 //import AV from 'leancloud-storage'
 AV.init({
   appId: 'fvNj37eIisKzO1HsM0oLMF9R-gzGzoHsz',

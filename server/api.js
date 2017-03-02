@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const AV = require('leanengine');
-
+const AV = require('leanengine');//生产环境
+//const AV = require('./AV');//开发环境
 
 const news_query = new AV.Query('news')
 router.get('/api/getNews', (req, res) => {

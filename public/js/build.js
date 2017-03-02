@@ -43169,8 +43169,9 @@ exports.default = {
       this.$store.dispatch('getProducts');
       this.$store.dispatch('getNews', 1);
     },
-    fetchItemData: function fetchItemData(id) {
-      this.$router.push({ name: 'itemnew', params: { _id: id } });
+    goItemNew: function goItemNew(item) {
+      this.$store.commit('SET_ITEMNEW', item);
+      this.$router.push({ name: '动态详情', params: { _id: item.objectId } });
     },
     goto: function goto(name) {
       this.$router.push({ path: name });
@@ -52133,7 +52134,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
-          _vm.fetchItemData(item._id)
+          _vm.fetchItemData(item)
         }
       }
     }, [_vm._v("\n                " + _vm._s(item.new_title) + "\n            ")])]), _vm._v(" "), _c('el-col', {
@@ -52144,7 +52145,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "itemnew",
       on: {
         "click": function($event) {
-          _vm.fetchItemData(item._id)
+          _vm.fetchItemData(item)
         }
       }
     }, [_vm._v(_vm._s(_vm._f("toDate")(item.createdAt)))])]), _vm._v(" "), _c('el-col', {
