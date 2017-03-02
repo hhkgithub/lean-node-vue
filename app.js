@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 var AV = require('leanengine');
 
 var app = express();
-
+const api = require('./server/api')
+app.use(api)
 // 设置模板引擎
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -15,6 +16,7 @@ app.set('view engine', 'ejs');
 app.use('/static', express.static('public'));
 // 设置默认超时时间
 app.use(timeout('15s'));
+
 
 // 加载云函数定义
 require('./cloud');

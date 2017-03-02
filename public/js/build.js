@@ -14112,22 +14112,7 @@ var _CreateComponent = __webpack_require__(108);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //noinspection JSUnresolvedVariable
-
 _vue2.default.use(_vueRouter2.default);
-
-// const Vue = require('vue')
-// const Router = require('vue-router')
-// const IndexContent = require('../../../src/components/IndexContent.vue')
-// const NewsList = require('../../../src/components/NewsList.vue')
-// const ItemNew = require('../../../src/components/ItemNew.vue')
-// const Business = require('../../../src/components/Business')
-// const ItemProduct = require('../../../src/components/ItemProduct')
-// const CompanyIntroduction = require('../../../src/components/CompanyIntroduction')
-// const ManagerIntroduction = require('../../../src/components/ManagerIntroduction')
-// const CompanyCivilization = require('../../../src/components/CompanyCivilization')
-// const ContactUs = require('../../../src/components/ContactUs')
-// const Wanmujidi = require('../../../src/components/Wanmujidi')
-// const { createComponent } = require('../CreateComponent')
 
 
 var router = new _vueRouter2.default({

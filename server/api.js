@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const AV = require('./AV')
+const AV = require('leanengine');
+
 
 const news_query = new AV.Query('news')
 router.get('/api/getNews', (req, res) => {
