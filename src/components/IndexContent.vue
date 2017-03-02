@@ -31,12 +31,12 @@
 
           <el-row v-for="item in itemsNews" class="newsrow">
             <el-col :span="15">
-              <div class="itemnew" @click="fetchItemData(item)" style="text-indent:0px">
+              <div class="itemnew" @click="goItemNew(item)" style="text-indent:0px">
                   {{item.new_title }}
               </div>
             </el-col>
             <el-col :span="6">
-              <div class="itemnew" @click="fetchItemData(item)">{{item.createdAt | toDate}}</div>
+              <div class="itemnew" @click="goItemNew(item)">{{item.createdAt | toDate}}</div>
             </el-col>
             <el-col :span="3">
               <div v-if="item.new_status=='N'"><img src="/static/images/new.png" width="32px" ></div>

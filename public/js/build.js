@@ -52134,7 +52134,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
-          _vm.fetchItemData(item)
+          _vm.goItemNew(item)
         }
       }
     }, [_vm._v("\n                " + _vm._s(item.new_title) + "\n            ")])]), _vm._v(" "), _c('el-col', {
@@ -52145,7 +52145,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "itemnew",
       on: {
         "click": function($event) {
-          _vm.fetchItemData(item)
+          _vm.goItemNew(item)
         }
       }
     }, [_vm._v(_vm._s(_vm._f("toDate")(item.createdAt)))])]), _vm._v(" "), _c('el-col', {
