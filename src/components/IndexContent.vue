@@ -39,7 +39,7 @@
               <div class="itemnew" @click="fetchItemData(item._id)">{{item.createdAt | toDate}}</div>
             </el-col>
             <el-col :span="3">
-              <div v-if="item.new_status=='N'"><img src="/images/new.png" width="32px" ></div>
+              <div v-if="item.new_status=='N'"><img src="/static/images/new.png" width="32px" ></div>
             </el-col>
           </el-row>
         </el-col>
